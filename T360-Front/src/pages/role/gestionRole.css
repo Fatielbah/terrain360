@@ -1,0 +1,51 @@
+/* Modal light mode */
+.modal-light .ant-modal-content {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.modal-light .ant-modal-header {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.modal-light .ant-modal-title {
+  color: #000000 !important;
+}
+
+.modal-light .ant-modal-footer {
+  border-top: 1px solid #f0f0f0 !important;
+}
+
+/* Modal dark mode */
+.modal-dark .ant-modal-content {
+  background-color: #ff1900!important;
+  color: #ffffff !important;
+}
+
+.modal-dark .ant-modal-header {
+  background-color: #273142 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #333333 !important;
+}
+
+.modal-dark .ant-modal-title {
+  color: #ffffff !important;
+}
+
+.modal-dark .ant-modal-footer {
+  border-top: 1px solid #273142!important;
+}
+
+/* Boutons */
+.modal-dark .ant-btn-default {
+  background-color: #273142 !important;
+  color: #ffffff !important;
+  border-color: #444444 !important;
+}
+
+.modal-dark .ant-btn-danger {
+  background-color: #5c0011 !important;
+  border-color: #7d0018 !important;
+}

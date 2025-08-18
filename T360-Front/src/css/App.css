@@ -1,0 +1,12 @@
+/* App.css - Simplified version */
+.App {
+  min-height: 100vh;
+  background-color: #f8fafc; /* A light gray similar to Tailwind's bg-gray-50 */
+}
+
+/* Optional: Add smooth transitions for all elements */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Remove the animation styles since we won't be using the React logo */

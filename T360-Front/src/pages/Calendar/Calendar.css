@@ -1,0 +1,91 @@
+/* Styles pour le calendrier */
+.fc-theme-standard .fc-scrollgrid {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fc-theme-standard th {
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.fc-theme-standard td {
+  border-color: #f0f0f0;
+}
+
+.fc-day-today {
+  background-color: rgba(24, 144, 255, 0.05) !important;
+}
+
+.fc-event {
+  border-radius: 4px;
+  border: none;
+  padding: 2px 4px;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 10px;
+}
+
+.fc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.fc-event-title {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Custom event colors */
+.fc-event.task-event {
+  background-color:  #D3CDEB !important;
+  border-left: 5px solid #7551E9!important;
+  color: #fff !important; /* Adjust text color for better contrast if needed */
+}
+
+.fc-event.event-event {
+  background-color: #FCD9F1 !important;
+  border-left: 5px solid#E951BF!important;
+  color: #fff !important; /* Adjust text color for better contrast if needed */
+}
+
+.fc-event.holiday-event {
+  background-color: #FDEADF !important;
+  border-left: 5px solid #FF9E58 !important;
+  color: #000 !important; /* Adjust text color for better contrast if needed */
+}
+
+/* Priority borders */
+.fc-event.priority-low {
+  border-left: 5px solid #1890ff !important;
+}
+
+.fc-event.priority-medium {
+  border-left: 5px solid rgb(54, 143, 54) !important;
+}
+
+.fc-event.priority-high {
+  border-left: 5px solid rgb(219, 29, 29) !important;
+}
+
+/* Ensure only title is visible by default */
+.fc-event-main-frame {
+  display: flex;
+  align-items: center;
+}
+
+.fc-event-title-container {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fc-event-time,
+.fc-event-resizer {
+  display: none !important; /* Hide time and resizer by default */
+}

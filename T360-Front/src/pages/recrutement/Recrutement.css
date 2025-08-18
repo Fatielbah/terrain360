@@ -1,0 +1,88 @@
+.select-dark .ant-select-selector {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+    border-color: #1890ff !important;
+  }
+  
+  .select-dark .ant-select-arrow {
+    color: #fff;
+  }
+  .option-dark{
+    background-color: #2c3e50;
+  }
+  .select-dropdown-dark {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+  }
+  
+  .select-dropdown-dark .ant-select-item {
+    color: #fff !important;
+  }
+  
+  .select-dropdown-dark .ant-select-item-option-selected {
+    background-color: #1890ff !important;
+  }
+  .custom-modal-light{
+    top: 0;
+  }
+  .custom-modal-dark{
+    top: 0;
+  }
+/* Surcharge le fond interne du Modal */
+.custom-modal-dark .ant-modal-content {
+  background-color: #2c3e50 !important;
+  color: #fff;
+}
+
+.custom-modal-light .ant-modal-content {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Optionnel : titre du modal */
+.custom-modal-dark .ant-modal-header {
+  background-color: #2c3e50 !important;
+  border-bottom: 1px solid #444;
+}
+
+.custom-modal-dark .ant-modal-title {
+  color: #fff;
+}
+/* TABLEAU EN DARK MODE */
+.card-dark .ant-table {
+  background-color: #2c3e50 !important;
+  color: white;
+}
+
+.card-dark .ant-table-thead > tr > th {
+  background-color: #3a4a5a !important;
+  color: white !important;
+  border-color: #444 !important;
+}
+
+.card-dark .ant-table-tbody > tr > td {
+  background-color: #2c3e50 !important;
+  color: white;
+  border-color: #444 !important;
+}
+
+.card-dark .ant-table-tbody > tr:hover > td {
+  background-color: #3c536c !important;
+}
+
+/* TABLEAU EN LIGHT MODE (optionnel, pour normaliser) */
+.card-light .ant-table {
+  background-color: #fff !important;
+  color: #000;
+}
+
+.card-light .ant-table-thead > tr > th {
+  background-color: #fafafa !important;
+  color: #000;
+  border-color: #d9d9d9;
+}
+.card-dark .ant-btn {
+  border-color: #888;
+  background-color: #3b4c5a;
+  color: white;
+}

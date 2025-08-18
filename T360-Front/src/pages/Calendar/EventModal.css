@@ -1,0 +1,122 @@
+.event-type-toggle {
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  padding: 2px;
+  display: inline-block;
+}
+
+.event-type-toggle .ant-radio-button-wrapper {
+  border: none;
+  background: transparent;
+  border-radius: 20px;
+}
+
+.event-type-toggle .ant-radio-button-wrapper-checked {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-type-toggle .ant-radio-button-wrapper:before {
+  display: none;
+}
+
+/* Dark mode styles */
+.modal-dark .event-type-toggle {
+  background-color: #2d3748;
+}
+.modal-dark ,.modal-light{
+    top:0;
+}
+.modal-dark .event-type-toggle .ant-radio-button-wrapper-checked {
+  background-color: #4a5568;
+}
+
+.modal-dark .ant-modal-content,
+.modal-dark .ant-modal-header {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+.modal-dark .ant-modal-title,
+.modal-dark .ant-form-item-label > label {
+  color: #e2e8f0;
+}
+
+.modal-dark .ant-input,
+.modal-dark .ant-picker,
+.modal-dark .ant-select-selector,
+.modal-dark .ant-select-dropdown {
+  background-color:#323D4E;
+  color: #e2e8f0;
+  border-color: #4a5568;
+}
+
+.modal-dark .ant-input::placeholder,
+.modal-dark .ant-picker-input > input::placeholder {
+  color: #a0aec0;
+}
+
+.modal-dark .ant-radio-wrapper,
+.modal-dark .ant-checkbox-wrapper {
+  color: #e2e8f0;
+}
+
+.modal-dark .ant-divider {
+  border-color: #4a5568;
+}
+
+.modal-dark .ant-divider-inner-text {
+  color: #e2e8f0;
+}
+
+.modal-dark .ant-select-item {
+  color: #e2e8f0;
+  background-color: #2d3748;
+}
+
+.modal-dark .ant-select-item-option-selected {
+  background-color: #4a5568;
+}
+
+.modal-dark .ant-select-item-option-active {
+  background-color: #3a4556;
+}
+
+/* Styles pour les notifications */
+.notification-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Styles pour les tags de statut */
+.fc-event-main-content .ant-tag {
+  font-size: 10px;
+  line-height: 14px;
+  padding: 0 4px;
+  margin-right: 4px;
+}
+.select-dark .ant-select-selector {
+  background-color: #2c3e50 !important;
+  color: #fff !important;
+  border-color: #1890ff !important;
+}
+
+.select-dark .ant-select-arrow {
+  color: #fff;
+}
+.option-dark{
+  background-color: #2c3e50;
+}
+.select-dropdown-dark {
+  background-color: #2c3e50 !important;
+  color: #fff !important;
+}
+
+.select-dropdown-dark .ant-select-item {
+  color: #fff !important;
+}
+
+.select-dropdown-dark .ant-select-item-option-selected {
+  background-color: #1890ff !important;
+}

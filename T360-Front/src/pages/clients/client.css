@@ -1,0 +1,98 @@
+.layout-light {
+    background-color: #f0f2f5; 
+  }
+  
+  .layout-dark {
+    background-color: #1B2431;
+    height: 100%;
+  }
+  
+  .content-light {
+    background-color: #f0f2f5;
+    margin: 24px 16px 0;
+  }
+  
+  .content-dark {
+    background-color: #1B2431;
+    margin: 24px 16px 0;
+  }
+  .card-title-light {
+    color: #000 !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline #1890ff;
+  }
+  .card-title-dark {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline #1890ff;
+  }
+  .card-light {
+    background: #fff !important; 
+    color: #000 !important;
+  }
+  .card-dark {
+    background: #2c3e50 !important;
+   color: #fff !important;
+  }
+  .card-dark .ant-form-item-label > label {
+    color: #fff !important;
+  }
+  .table-dark {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+  }
+  
+  .table-dark .ant-table {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+  }
+  
+  .table-dark .ant-table-thead > tr > th {
+    background-color: #1f2d3d !important;
+    color: #fff !important;
+  }
+  
+  .table-dark .ant-table-tbody > tr > td {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+  }
+  
+  .table-dark .ant-table-tbody > tr:hover > td {
+    background-color: #35475e !important;
+  }
+  
+  .table-dark .ant-table-placeholder {
+    background-color: #2c3e50 !important;
+    color: #aaa !important;
+  }
+  /* Pagination container background */
+  .table-dark .ant-pagination {
+    background-color: #2c3e50; 
+  }
+  
+  /* Pagination items (numéros, flèches) */
+  .table-dark .ant-pagination-item,
+  .table-dark .ant-pagination-prev,
+  .table-dark .ant-pagination-next {
+    background-color: #1c2733;
+    border: none;
+  }
+  
+  .table-dark .ant-pagination-item a,
+  .table-dark .ant-pagination-prev button,
+  .table-dark .ant-pagination-next button {
+    color: #fff; /* texte blanc */
+  }
+  
+  /* Numéro actif */
+  .table-dark .ant-pagination-item-active {
+    background-color: #1c2733;
+    color: #fff !important;
+  }
+  
+  .table-dark .ant-pagination-item-active a {
+    color: #2c3e50;
+  }
+  

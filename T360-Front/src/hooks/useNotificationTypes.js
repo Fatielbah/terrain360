@@ -1,0 +1,8 @@
+export const useNotificationTypes = () => {
+  return {
+    RAPPEL: "RAPPEL",
+    INVITATION_EVENEMENT: "INVITATION_EVENEMENT",
+    DECLARER_EN_PANNE: "DECLARER_EN_PANNE",
+    RESOUDRE_TICKET: "RESOUDRE_TICKET",
+  }
+}

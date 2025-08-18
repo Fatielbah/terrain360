@@ -1,0 +1,151 @@
+/* Main container styling */
+.login-container {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Watermark styling */
+  .watermark {
+    position: absolute;
+    font-size: 7rem;
+    color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  /* Corner logo styling */
+  .corner-logo {
+    position: absolute;
+    top: 30px;
+    left: -80px;
+    transform: rotate(-45deg);
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    z-index: 1;
+    user-select: none;
+  }
+  
+  /* Card styling */
+  .login-card {
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    border: none;
+    padding: 30px;
+    background: white;
+  }
+  
+  /* Logo text styling */
+  .logo-text {
+    text-align: center;
+    color: #3B82F6;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Login title styling */
+  .login-title {
+    text-align: center;
+    margin-top: 10px;
+    color: #1E3A8A;
+    font-weight: 600;
+  }
+  
+  /* Subtitle styling */
+  .login-subtitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #64748B;
+    font-size: 14px;
+  }
+  
+  /* Form input styling */
+  .login-card .ant-input {
+    border-radius: 6px;
+    padding: 10px 12px;
+    border: 1px solid #E2E8F0;
+  }
+  
+  .login-card .ant-input:focus,
+  .login-card .ant-input-focused {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+  
+  /* Password input styling */
+  .login-card .ant-input-password {
+    border-radius: 6px;
+    padding: 0;
+    border: 1px solid #E2E8F0;
+  }
+  
+  .login-card .ant-input-password .ant-input {
+    border: none;
+  }
+  
+  /* Form options styling */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    color: #3B82F6;
+    font-size: 13px;
+  }
+  
+  .forgot-password:hover {
+    color: #2563EB;
+    text-decoration: underline;
+  }
+  
+  /* Checkbox styling */
+  .login-card .ant-checkbox-wrapper {
+    color: #64748B;
+    font-size: 13px;
+  }
+  
+  /* Login button styling */
+  .login-card .ant-btn-primary {
+    background: #3B82F6;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .login-card .ant-btn-primary:hover {
+    background: #2563EB;
+  }
+  
+  .login-card .ant-btn-primary:active {
+    background: #1D4ED8;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .login-card {
+      width: 90%;
+      padding: 20px;
+    }
+    
+    .watermark {
+      font-size: 4rem;
+    }
+  }

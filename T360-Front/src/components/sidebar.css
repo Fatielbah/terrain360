@@ -1,0 +1,319 @@
+/* Couleur de l'élément sélectionné (actif) */
+.ant-menu-item-selected {
+    background-color: #3b82f6 !important;
+    color: white !important;
+}
+
+/* Couleur quand on survole un élément */
+.ant-menu-item:hover {
+    background-color: #dbeafe !important;
+    color: #1d4ed8 !important;
+}
+
+.select-dark .ant-select-selector {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+    border-color: #1890ff !important;
+}
+
+.select-dark .ant-select-arrow {
+    color: #fff;
+}
+
+.option-dark {
+    background-color: #2c3e50;
+}
+
+.select-dropdown-dark {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+}
+
+.select-dropdown-dark .ant-select-item {
+    color: #fff !important;
+}
+
+.select-dropdown-dark .ant-select-item-option-selected {
+    background-color: #1890ff !important;
+}
+
+.layout-light {
+    background-color: #f0f2f5; /* clair */
+}
+
+.layout-dark {
+    background-color: #19191b !important; /* sombre */
+}
+
+/* Light mode sidebar */
+.sider-light {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    height: 97.2%;
+}
+
+/* Dark mode sidebar */
+.sider-dark {
+    background-color: #273142 !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    height: 97.2%;
+    display: flex; /* Added for flex layout */
+    flex-direction: column; /* Added for flex layout */
+    height: 3000px; /* Set a fixed height for the sidebar */
+}
+
+/* Toggle button */
+.sider-toggle {
+    padding: 10px;
+    text-align: right;
+}
+
+/* Icon inside toggle button */
+.toggle-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #000; /* par défaut noir */
+}
+
+/* Light menu */
+.menu-light {
+    background-color: #fff !important; /* Added !important */
+    border-right: 0;
+}
+
+/* Target the actual Ant Design UL element within the light menu */
+.menu-light .ant-menu {
+    background-color: #fff !important; /* Force white background on the UL */
+}
+
+/* Target any potential Ant Design sub-menus in light mode */
+.menu-light .ant-menu-sub {
+    background-color: #fff !important;
+}
+
+.menu-light .ant-menu-item,
+.menu-light .ant-menu-submenu-title {
+    color: #000;
+}
+
+.menu-light .ant-menu-item-selected {
+    background-color: #e6f7ff;
+    color: #1890ff;
+}
+
+/* Dark menu */
+.menu-dark {
+    background-color: #273142 !important; /* Added !important */
+    border-right: 0;
+    flex: 1; /* Added to make the menu fill available space */
+    overflow-y: auto; /* Added to allow scrolling if content overflows */
+}
+
+/* Target the actual Ant Design UL element within the dark menu */
+.menu-dark .ant-menu {
+    background-color: #273142 !important; /* Force dark background on the UL */
+}
+
+/* Target any potential Ant Design sub-menus in dark mode */
+.menu-dark .ant-menu-sub {
+    background-color: #273142 !important;
+}
+
+.menu-dark .ant-menu-item,
+.menu-dark .ant-menu-submenu-title {
+    color: #fff;
+}
+
+.menu-dark .ant-menu-item-selected {
+    background-color: #273142;
+    color: #40a9ff;
+}
+
+/* Icons color (inherits text color) */
+.menu-light .ant-menu-item-icon,
+.menu-dark .ant-menu-item-icon {
+    color: inherit;
+}
+
+/* Header styles */
+.header-light {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-dark {
+    background: #273142;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* Topbar container */
+.topbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo-container {
+    background: transparent;
+}
+
+.logo-main {
+    font-size: 28px;
+    color: #1890ff;
+    font-weight: 800;
+    transition: font-size 0.3s ease;
+}
+
+.logo-main .logo-sub-light {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+.logo-sub-dark {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+/* Right side */
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Bell icon */
+.bell-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #3b82f6;
+}
+
+/* Select */
+.select-light {
+    width: 120px;
+    background: #fff;
+    border: none;
+    color: #000;
+}
+
+.select-dark {
+    width: 120px;
+    background: #273142;
+    border: none;
+    color: #fff;
+}
+
+.menu-dropdown-dark {
+    background-color: #273142 !important;
+}
+
+.menu-item-dark {
+    color: #fff !important;
+}
+
+.dropdown-icon-dark {
+    color: #fff !important;
+}
+
+/* Divider */
+.divider {
+    height: 24px;
+    margin: 0;
+}
+
+/* Role text */
+.role-light {
+    font-weight: 500;
+    color: #000;
+}
+
+.role-dark {
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Avatar dropdown */
+.avatar-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+}
+
+/* Menu dropdown */
+.menu-item {
+    color: inherit;
+}
+
+.menu-item .anticon {
+    color: inherit;
+}
+
+/* Styles pour les notifications */
+.notification-dropdown-light,
+.notification-dropdown-dark {
+    max-width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notification-item-light {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+
+.notification-item-dark {
+    padding: 8px 12px;
+    border-bottom: 1px solid #303030;
+    background-color: #1f1f1f;
+}
+
+.notification-item-unread-light {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f6ffed;
+}
+
+.notification-item-unread-dark {
+    padding: 8px 12px;
+    border-bottom: 1px solid #303030;
+    background-color: #1d3711;
+}
+
+/* Ajustements pour le badge */
+.ant-badge-count {
+    font-size: 10px;
+    line-height: 16px;
+    height: 16px;
+    min-width: 16px;
+    padding: 0 4px;
+}
+
+.bell-icon {
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.bell-icon:hover {
+    color: #1890ff;
+}
