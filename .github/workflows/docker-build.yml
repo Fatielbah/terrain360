@@ -2,33 +2,36 @@ name: Build and Push Docker Images
 
 on:
   push:
-    branches: [ "main" ]   # déclenche le workflow quand tu fais git push sur main
+    branches: [ "main" ]   # déclenche le workflow sur chaque push sur main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Étape 1 : récupérer ton code
+      # 1️⃣ Récupérer le code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Étape 2 : Build et push du backend
-      - name: Build and push backend
-        uses: docker/build-push-action@v5
+      # 2️⃣ Login à Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
         with:
-          context: ./PFE    # chemin de ton backend (change si besoin)
-          push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-backend:latest
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # Étape 3 : Build et push du frontend
+      # 3️⃣ Build et push backend
+      - name: Build and push backend
+        uses: docker/build-push-action@v5
+        with:
+          context: ./PFE       # chemin vers ton backend Spring Boot
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-backend:latest
+
+      # 4️⃣ Build et push frontend
       - name: Build and push frontend
         uses: docker/build-push-action@v5
         with:
-          context: ./T360-Front   # chemin de ton frontend (change si besoin)
+          context: ./T360-Front    # chemin vers ton frontend React
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-frontend:latest
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
