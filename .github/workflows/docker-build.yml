@@ -1,0 +1,34 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches: [ "main" ]   # déclenche le workflow quand tu fais git push sur main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : récupérer ton code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Étape 2 : Build et push du backend
+      - name: Build and push backend
+        uses: docker/build-push-action@v5
+        with:
+          context: ./backend     # chemin de ton backend (change si besoin)
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-backend:latest
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # Étape 3 : Build et push du frontend
+      - name: Build and push frontend
+        uses: docker/build-push-action@v5
+        with:
+          context: ./frontend    # chemin de ton frontend (change si besoin)
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-frontend:latest
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
