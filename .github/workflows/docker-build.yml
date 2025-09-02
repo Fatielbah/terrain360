@@ -17,7 +17,7 @@ jobs:
       - name: Build and push backend
         uses: docker/build-push-action@v5
         with:
-          context: ./backend     # chemin de ton backend (change si besoin)
+          context: ./PFE    # chemin de ton backend (change si besoin)
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-backend:latest
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -27,7 +27,7 @@ jobs:
       - name: Build and push frontend
         uses: docker/build-push-action@v5
         with:
-          context: ./frontend    # chemin de ton frontend (change si besoin)
+          context: ./T360-Front   # chemin de ton frontend (change si besoin)
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/mon-projet-frontend:latest
           username: ${{ secrets.DOCKER_USERNAME }}
